@@ -16,7 +16,7 @@ export class HomeComponent {
 verDetalleCita(_t36: any) {
 throw new Error('Method not implemented.');
 }
-
+  ///Locoteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
   userName: string = "Dr. Juan Pérez"; // Nombre del usuario autenticado
   pacientesCount: number = 120; // Número de pacientes registrados
   citasHoyCount: number = 5; // Número de citas para hoy
