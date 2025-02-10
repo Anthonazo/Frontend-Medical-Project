@@ -1,0 +1,40 @@
+<div class="register-container">
+    <div class="register-box">
+      <div class="register-header">
+        <h2>Registro</h2>
+        <p>Completa el formulario para crear una cuenta.</p>
+      </div>
+      <form class="register-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" [(ngModel)]="usuario.nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" [(ngModel)]="usuario.apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" [(ngModel)]="usuario.email" required>
+          </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" [(ngModel)]="usuario.telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" [(ngModel)]="usuario.direccion" required>
+        </div>
+        <div class="form-group">
+          <label for="especialidad">Especialidad</label>
+          <input type="text" id="especialidad" name="especialidad" placeholder="Ingresa tu especialidad" [(ngModel)]="especialidad" required>
+        </div>
+        <div class="form-group">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass" placeholder="Ingresa tu clave" [(ngModel)]="usuario.pass" required>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="register()">Registrarse</button>
+        <button type="button" class="btn btn-secondary" routerLink="/login">¿Ya tienes una cuenta? Inicia Sesión</button>
+      </form>
+    </div>
+  </div>

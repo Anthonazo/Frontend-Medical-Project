@@ -1,0 +1,84 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6fa;
+  }
+  
+  .register-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .register-header h2 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .register-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .register-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-form .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    color: #2c3e50;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-form .form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .register-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    font-size: 0.90rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .register-form .btn-primary {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .register-form .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  .register-form .btn-secondary {
+    background-color: #34495e; /* Gris oscuro */
+    color: #ffffff;
+  }
+  
+  .register-form .btn-secondary:hover {
+    background-color: #293a4b; /* Gris más oscuro al pasar el mouse */
+  }

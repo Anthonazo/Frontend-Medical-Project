@@ -1,0 +1,40 @@
+<div class="register-container">
+    <div class="register-box">
+      <div class="register-header">
+        <h2>Registro de Paciente</h2>
+        <p>Completa el formulario para registrar un nuevo paciente.</p>
+      </div>
+      <form class="register-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre" [(ngModel)]="paciente.nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ingresa el apellido" [(ngModel)]="paciente.apellido" required>
+        </div>
+        <div class="form-group">
+          <label for="cedula">Cédula</label>
+          <input type="text" id="cedula" name="cedula" placeholder="Ingresa la cédula" [(ngModel)]="paciente.cedula" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ingresa el teléfono" [(ngModel)]="paciente.telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Ingresa la dirección" [(ngModel)]="paciente.direccion" required>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="Ingresa el correo electrónico" [(ngModel)]="paciente.correo" required>
+        </div>
+        <!-- <div class="form-group">
+          <label for="diagnostico">Diagnóstico</label>
+          <textarea id="diagnostico" name="diagnostico" placeholder="Ingresa el diagnóstico" [(ngModel)]="paciente.diagnostico" required></textarea>
+        </div> -->
+        <button type="submit" class="btn btn-primary" (click)="registrarPaciente()">Registrar Paciente</button>
+        <button type="button" class="btn btn-secondary" routerLink="/home">Cancelar</button>
+      </form>
+    </div>
+  </div>

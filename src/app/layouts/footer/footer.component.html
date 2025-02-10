@@ -1,0 +1,41 @@
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3 class="footer-title">MediCare</h3>
+        <p class="footer-text">
+          MediCare es una plataforma dedicada a brindar servicios médicos de calidad, conectando pacientes con profesionales de la salud.
+        </p>
+      </div>
+      @if (this.authenticated) {
+        <div class="footer-section links">
+          <h3 class="footer-title">Enlaces Rápidos</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Inicio</a></li>
+            <li><a href="#" class="footer-link">Servicios</a></li>
+            <li><a href="#" class="footer-link">Doctores</a></li>
+            <li><a href="#" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+      } @else {
+        <div class="footer-section links">
+          <h3 class="footer-title">Enlaces Rápidos</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Beneficios</a></li>
+            <li><a href="#" class="footer-link">Sobre Nosotros</a></li>
+            <li><a href="#" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+      }
+      <div class="footer-section contact">
+        <h3 class="footer-title">Contacto</h3>
+        <ul class="footer-list">
+          <li><i class="fas fa-map-marker-alt"></i> Av. Médica 123, Ciudad Salud</li>
+          <li><i class="fas fa-phone"></i> +123 456 7890</li>
+          <li><i class="fas fa-envelope"></i> infomedicare.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 MediCare. Todos los derechos reservados.</p>
+    </div>
+  </footer>

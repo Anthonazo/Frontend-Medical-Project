@@ -1,0 +1,56 @@
+<div class="page-container">
+    <!-- Formulario para agendar citas -->
+    <div class="form-container">
+      <h2>Agendar Cita</h2>
+      <form class="appointment-form" (ngSubmit)="agendarCita()">
+        <!-- Combo Box para seleccionar paciente -->
+        <div class="form-group">
+          <label for="paciente">Selecciona un paciente:</label>
+          <select id="paciente" name="paciente" [(ngModel)]="selectedPacienteId" required>
+            <option *ngFor="let paciente of pacientes" [value]="paciente.id">
+              {{ paciente.nombre }} {{ paciente.apellido }} ({{ paciente.cedula }})
+            </option>
+          </select>
+        </div>
+  
+        <!-- Campos adicionales para la cita -->
+        <div class="form-group">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" [(ngModel)]="cita.fecha" required>
+        </div>
+        <div class="form-group">
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" [(ngModel)]="cita.hora" required>
+        </div>
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <select id="estado" name="estado" [(ngModel)]="cita.estado" required>
+            <option value="confirmada">Confirmada</option>
+            <option value="cancelada">Cancelada</option>
+          </select>
+        </div>
+  
+        <!-- Botón para agendar cita -->
+        <button type="submit" class="btn btn-primary">Agendar Cita</button>
+      </form>
+    </div>
+  
+    <!-- Lista de citas existentes -->
+    <div class="citas-container">
+      <h2>Citas Agendadas</h2>
+      <div class="citas-grid">
+        <div class="cita-card" *ngFor="let cita of citass">
+          <div class="cita-header">
+            <h3>{{ cita.pacienteNombre }} {{ cita.pacienteApellido }}</h3>
+          </div>
+          <div class="cita-body">
+            <p><strong>Fecha:</strong> {{ cita.fecha | date:'dd/MM/yyyy' }}</p>
+            <p><strong>Hora:</strong> {{ cita.hora }}</p>
+          </div>
+          <div class="cita-actions">
+            <button class="btn btn-danger" (click)="cancelarCita(cita)">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

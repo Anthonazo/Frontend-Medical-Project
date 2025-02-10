@@ -1,0 +1,124 @@
+<div class="doctor-panel">
+    <!-- Bienvenida -->
+    <section class="welcome-section">
+      <h1>Bienvenido, {{ userName }}</h1>
+      <p>Gestiona tu consultorio médico de manera eficiente.</p>
+    </section>
+  
+    <!-- Acciones Rápidas -->
+    <section class="quick-actions">
+      <h2>Acciones Rápidas</h2>
+      <div class="actions-grid">
+        <div class="action-card" routerLink="/register-patient">
+            <i class="fas fa-user"></i>
+            <span>Registrar Paciente</span>
+            <p>Administra los registros de tus pacientes.</p>
+          </div>
+        <div class="action-card" routerLink="/pacientes">
+          <i class="fas fa-users"></i>
+          <span>Gestionar Pacientes</span>
+          <p>Administra los registros de tus pacientes.</p>
+        </div>
+        <div class="action-card" routerLink="/appointment">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Gestionar Citas</span>
+          <p>Organiza y revisa las citas programadas.</p>
+        </div>
+        <div class="action-card" routerLink="/historiales">
+          <i class="fas fa-file-medical"></i>
+          <span>Ver Historiales</span>
+          <p>Accede a los historiales médicos completos.</p>
+        </div>
+        <div class="action-card" routerLink="/reportes">
+          <i class="fas fa-chart-line"></i>
+          <span>Ver Reportes</span>
+          <p>Genera y visualiza reportes estadísticos.</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Información Relevante -->
+    <section class="info-section">
+      <h2>Información Relevante</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>Pacientes Registrados</h3>
+          <p>{{ pacientesCount }}</p>
+          <small>Total de pacientes en el sistema.</small>
+        </div>
+        <div class="info-card">
+          <h3>Citas Hoy</h3>
+          <p>{{ citasHoyCount }}</p>
+          <small>Citas agendadas para hoy.</small>
+        </div>
+        <div class="info-card">
+          <h3>Ingresos Mensuales</h3>
+          <p>{{ ingresosMensuales }}</p>
+          <small>Ingresos generados este mes.</small>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Citas Próximas -->
+    <section class="upcoming-appointments">
+      <h2>Citas Próximas</h2>
+      <div class="appointments-grid">
+        <div class="appointment-card">
+          <h3>Ana López</h3>
+          <p><strong>Fecha:</strong> 2023-10-15</p>
+          <p><strong>Hora:</strong> 10:00 AM</p>
+          <p><strong>Motivo:</strong> Consulta general</p>
+          <button class="btn btn-primary">Ver Detalle</button>
+        </div>
+        <div class="appointment-card">
+          <h3>Carlos Méndez</h3>
+          <p><strong>Fecha:</strong> 2023-10-15</p>
+          <p><strong>Hora:</strong> 11:00 AM</p>
+          <p><strong>Motivo:</strong> Revisión de análisis</p>
+          <button class="btn btn-primary">Ver Detalle</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Notificaciones -->
+    <section class="notifications">
+      <h2>Notificaciones</h2>
+      <div class="notifications-grid">
+        <div class="notification-card">
+          <i class="fas fa-bell"></i>
+          <div class="notification-content">
+            <p>Nuevo paciente registrado: María González.</p>
+            <small>2023-10-14</small>
+          </div>
+        </div>
+        <div class="notification-card">
+          <i class="fas fa-bell"></i>
+          <div class="notification-content">
+            <p>Recordatorio: Cita con Ana López mañana a las 10:00 AM.</p>
+            <small>2023-10-14</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Actividades Recientes -->
+    <section class="recent-activities">
+      <h2>Actividades Recientes</h2>
+      <div class="activities-grid">
+        <div class="activity-card">
+          <i class="fas fa-history"></i>
+          <div class="activity-content">
+            <p>Actualizó el historial de Carlos Méndez.</p>
+            <small>2023-10-14</small>
+          </div>
+        </div>
+        <div class="activity-card">
+          <i class="fas fa-history"></i>
+          <div class="activity-content">
+            <p>Agendó una nueva cita para Ana López.</p>
+            <small>2023-10-13</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
